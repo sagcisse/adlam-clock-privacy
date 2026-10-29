@@ -95,6 +95,10 @@
             margin-bottom: 12px;
         }
 
+        p strong {
+            color: var(--text-primary);
+        }
+
         ul {
             list-style: none;
             padding-left: 0;
@@ -120,6 +124,11 @@
 
         li strong {
             color: var(--text-primary);
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
         }
 
         footer {
@@ -150,50 +159,75 @@
         <header>
             <div class="app-tag">Adlam Live Clock</div>
             <h1>Privacy Policy</h1>
-            <div class="effective-date">Effective Date: October 2026</div>
+            <div class="effective-date">Effective Date: October 29, 2026</div>
         </header>
 
         <p class="intro">
-            <strong>Adlam Live Clock</strong> ("we", "our", or "us") respects your privacy. This Privacy Policy explains our practices regarding your information.
+            <strong>Adlam Live Clock</strong> ("we", "our", or "us") respects your privacy. This Privacy Policy explains what information the app uses, why it uses it, and the choices you have.
         </p>
 
         <section>
-            <h2>1. Information Collection and Use</h2>
+            <h2>1. Information We Collect</h2>
             <p>
-                Adlam Live Clock does <strong>NOT</strong> collect, store, track, or transmit any personal data, location data, or user information.
+                We do <strong>NOT</strong> run any servers that collect your personal data, and the app has no account, sign-up, or login. We do not sell, rent, or trade your information.
+            </p>
+            <p>
+                The app works mainly on your device. Your choices (clock style, date type, Hijri date adjustment, wallpaper options) are saved locally on your device only and are never sent to us.
             </p>
         </section>
 
         <section>
-            <h2>2. App Permissions</h2>
+            <h2>2. App Permissions and How They Are Used</h2>
             <ul>
-                <li><strong>Foreground Service (FOREGROUND_SERVICE):</strong> Used solely to update clock widgets and live clock displays in real time.</li>
-                <li><strong>Set Wallpaper (SET_WALLPAPER):</strong> Used only when you choose to set the live clock as your home or lock screen wallpaper.</li>
+                <li><strong>Location (ACCESS_COARSE_LOCATION / ACCESS_FINE_LOCATION):</strong> Used only to show your city and country name and to calculate the Qibla direction in the compass and map screens. Your location is processed on your device and is not sent to us.</li>
+                <li><strong>Internet (INTERNET) and Network State (ACCESS_NETWORK_STATE):</strong> Used to download the ADLaM Display font and to load map tiles for the Qibla map from OpenStreetMap. Like any internet connection, the servers that provide these resources may receive standard technical information such as your IP address.</li>
+                <li><strong>Foreground Service (FOREGROUND_SERVICE):</strong> Used solely to keep the clock widgets, live clock, and live wallpaper updating in real time.</li>
+                <li><strong>Notifications (POST_NOTIFICATIONS):</strong> Used to show the notification required by the foreground service.</li>
+                <li><strong>Run at Startup (RECEIVE_BOOT_COMPLETED):</strong> Used to restart the clock service after your device restarts.</li>
+                <li><strong>Battery Optimization (REQUEST_IGNORE_BATTERY_OPTIMIZATIONS):</strong> Used only to ask you to let the app keep updating reliably in the background.</li>
+                <li><strong>Vibration (VIBRATE):</strong> Used only to vibrate your phone when the Qibla direction is found.</li>
             </ul>
+            <p>
+                None of these permissions are used to collect personal data. You can turn off any permission at any time from your device settings.
+            </p>
         </section>
 
         <section>
             <h2>3. Third-Party Services</h2>
             <p>
-                We do not use third-party analytics, tracking tools, or advertising services that collect user data.
+                We do not use third-party analytics, tracking tools, or advertising services. The app loads the ADLaM Display font and OpenStreetMap map tiles from their providers, which have their own privacy policies.
             </p>
         </section>
 
         <section>
-            <h2>4. Children's Privacy</h2>
+            <h2>4. Contacting Us</h2>
             <p>
-                Our application is safe for everyone and does not collect any data from children.
+                When you tap our email address in the app, your own email app opens. We receive only what you choose to send us (such as your email address and message) and use it only to reply to you. We do not share it with third parties.
             </p>
         </section>
 
         <section>
-            <h2>5. Contact Us</h2>
+            <h2>5. Children's Privacy</h2>
+            <p>
+                Our application is safe for everyone. We do not knowingly collect any personal data from children.
+            </p>
+        </section>
+
+        <section>
+            <h2>6. Changes to This Policy</h2>
+            <p>
+                We may update this Privacy Policy from time to time. The latest version will always be available at this page, and the effective date above will be updated.
+            </p>
+        </section>
+
+        <section>
+            <h2>7. Contact Us</h2>
             <p>
                 If you have any questions or suggestions regarding this Privacy Policy, feel free to contact us at:
             </p>
 
             <ul>
-                <li><strong>Email:</strong> <a href="mailto:jangudf@gmail.com" style="color: var(--accent-color); text-decoration: none;">jangudf@gmail.com</a></li>
+                <li><strong>Email:</strong> <a href="mailto:jangudf@gmail.com">jangudf@gmail.com</a></li>
                 <li><strong>Social:</strong> <span style="color: var(--text-primary);">@janguDF</span></li>
             </ul>
         </section>
